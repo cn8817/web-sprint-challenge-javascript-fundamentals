@@ -29,16 +29,12 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(number) {
-  const list = [];
-  for (let i = 0; i <= number; i++){
-    return list.push(i);
-  }
-  const sum = list.reduce(function(a, b){
-    return a + b;
-  },0);
-
-  }
- console.log(summation(4));
+  var total = 0;
+    for(var i = 1; i <= number; i++){
+      total += i;
+    }
+    return total;
+}
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
